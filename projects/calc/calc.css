@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Source Code Pro", serif;
+}
+header {
+    /* background-color: blue; */
+    text-align: center; 
+    padding: 2%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#name {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+#body-container {
+    /* background-color: red; */
+    height: 100vh;
+} 
+
+main{
+    /* background-color: lavenderblush; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    padding-bottom: 8%;
+}
+
+#main-stuff {
+    display: flex;
+    flex-direction: row;
+    /* background-color: blue; */
+    height: 60%;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    font-family: "Source Code Pro", serif;
+    font-size: 20px;
+    box-shadow: 2px 2px 8px black;
+}
+
+#add{
+    background-color: rgb(255, 125, 125);
+}
+
+#sub {
+    background-color: rgb(125, 181, 255);
+}
+
+#mult {
+    background-color: rgb(255, 196, 125);
+}
+
+#div     {
+    background-color: rgb(125, 255, 179);
+}
+
+#pow{
+    background-color: rgb(190, 125, 255);
+}
+
+#main-stuff div {
+    /* background-color: red; */
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+}
+
+#operations {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100px;
+}
+
+input {
+    height: 70px;
+    width: 100px;
+    text-align: center;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    margin: 0;
+    font-family: "Source Code Pro", serif;
+    font-size: 30px;
+}
+
+#clear-section{
+    /* background-color: blue; */
+    width: 125px;
+    height: 75px;
+    display: flex;
+    margin-top:0;
+    justify-content: center;
+    align-items: center;
+}
+
+#clear-section button{
+    width: 100px;
+    font-size: 18px;
+    font-family: "Source Code Pro", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 26, 26)
+}
+
+#output-section {
+    /* background-color: blue; */
+    height: 90px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#output {
+    font-size: 50px;
+}
