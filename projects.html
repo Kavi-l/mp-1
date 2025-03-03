@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Home | Resume</title>
     <link rel="stylesheet" type="text/css" href="projects.css">
+    <!-- google font for calc -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -25,7 +29,7 @@
                 </ul>
             </nav>
             <main>
-                <h3>Project</h3>
+                <h3 id="page-title">Project</h3>
                 <div id="projects-container">
                     <h4 id="github"><a href="https://github.com/Kavi-1?tab=repositories" target="_blank">GitHub</a></h4>
                     <div id="projects"> 
@@ -50,19 +54,48 @@
                             </ul>
                         </div>
                         
-                    </div><div class="project">
-                        <h4 class="project-name"><a href="calc.html" target="_blank">Calculator</a></h4>                        
-                        <ul class="bullet-points">
-                            <li>
-                                Developed an interactive Memory Match game in Java with customizable gameplay,
-                                including shuffling and scoring features
-                            </li>
-                            <li>
-                                Demonstrated strong problem-solving skills by efficiently using arrays and loops 
-                                to enable dynamic player turns and match handling in the Memory Match project
-                            </li>
-                        </ul>
+                        <div class="project">
+                            <h4 class="project-name"><a href="calc.html" target="_blank">Calculator</a></h4>                        
+                            <ul class="bullet-points">
+                                <li>
+                                    Developed an interactive Memory Match game in Java with customizable gameplay,
+                                    including shuffling and scoring features
+                                </li>
+                                <li>
+                                    Demonstrated strong problem-solving skills by efficiently using arrays and loops 
+                                    to enable dynamic player turns and match handling in the Memory Match project
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                    <div id="calc-container">
+                        <div id="main-stuff">
+                            <div class="input">
+                                <input type="text" id="first-number"> 
+                            </div>
+                    
+                            <div id="operations">
+                                <!-- use the decimal number for * and /-->
+                                <div><button onclick="addition()" id="add">+</button></div>
+                                <div><button onclick="subtraction()" id="sub">-</button></div>
+                                <div><button onclick="multiplication()" id="mult">&#215;</button></div>
+                                <div><button onclick="division()" id="div">&#247;</button></div>
+                                <div><button onclick="power()" id="pow">^</button></div>
+                            </div>
+                            <div class="input">
+                                <input type="text" id="second-number">
+                            </div>
+                    
+                        </div>
+                    
+                        <div id="clear-section"> 
+                            <button onclick="clearFields()">CLEAR</button>
+                        </div>
+                    
+                        <div id="output-section">
+                            <h3 id="output"></h3>
+                        </div>
+                    </div>      
                 </div>
             </main>
         </div>
@@ -71,6 +104,8 @@
             <p class="footer-text">All rights reserved: <a href="" class="footer-text">Credits</a>&#169;</p>
         </footer>
     </div>
+
+    <script src="calc.js"></script>
 </body>
 </html>
 

@@ -18,7 +18,7 @@ function subtraction() {
     let secondNumber = Number(document.getElementById("second-number").value);
 
     let result = ""
-    if (firstNumber === "" || secondNumber===""){
+    if (firstNumber == "" || secondNumber==""){
         result = "No input(s)";
     }
     else{
@@ -32,7 +32,7 @@ function multiplication() {
     let secondNumber = document.getElementById("second-number").value;
 
     let result = ""
-    if (firstNumber === "" || secondNumber===""){
+    if (firstNumber == "" || secondNumber==""){
         result = "No input(s)";
     }
     else{
@@ -64,9 +64,15 @@ function power() {
     let firstNumber = Number(document.getElementById("first-number").value);
     let secondNumber = Number(document.getElementById("second-number").value);
 
-    result = 1;
-    for (let i = 0; i<secondNumber; i++) {
-        result = result * firstNumber;
+    let result = ""
+    if (firstNumber == "" || secondNumber==""){
+        result = "No input(s)";
+    }
+    else{
+        result = 1;
+        for (let i = 0; i<secondNumber; i++) {
+            result = result * firstNumber;
+        }
     }
 
     document.getElementById("output").innerHTML = result;
